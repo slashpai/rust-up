@@ -23,6 +23,13 @@ Learning Rust Programming the old school way!
     - Using `cargo` helps you organize your projects. There’s a place for everything, and everything is in its place.
 - In Rust packages of code are referred to as `crates`
 
+## Examples Folder
+
+- `examples` directory is a standard convention recognized by `Cargo` to store standalone executable files that showcase how to use your library or package
+  - The most common implementation is a standard `.rs` file containing a main function inside the `examples/` folder
+  - If an example gets too large, you can create a subfolder inside `examples/.` Cargo will automatically seek a `main.rs` file inside that subfolder to compile it as the entry point.
+  - To run a specific example: `cargo run --example <example folder name>`
+
 ## References
 
 - [The Rust Programming Language Book](https://doc.rust-lang.org/stable/book/)
