@@ -10,7 +10,8 @@ Learning Rust Programming the old school way!
 - [`cargo`](https://doc.rust-lang.org/stable/book/ch01-03-hello-cargo.html): build and the package manager
   - `cargo new <project name>`
   - `cargo init` -> if project directory already exists
-  - `Cargo.toml` -> config files
+  - `Cargo.toml` -> config file
+  - `Cargo.lock` -> created and maintained by `cargo`
   - `cargo build` -> creates an executable file in `target/debug/`,  because the default build is a `debug` build
   - To run the program `./target/debug/<executable>`
   - Running `cargo buil`d for the first time causes `Cargo` to create a new file at the top level: `Cargo.lock`.
