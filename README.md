@@ -24,6 +24,7 @@ Learning Rust Programming the old school way!
     - The top-level project directory is just for README files, license information, configuration files, and anything else not related to your code.
     - Using `cargo` helps you organize your projects. There’s a place for everything, and everything is in its place.
 - In Rust packages of code are referred to as `crates`
+- Adding package as project dependency: `cargo add <package name>`
 - Installing packages: `cargo install <package name>`
 
 #### Terminologies and Conventions
