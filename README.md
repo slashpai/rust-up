@@ -14,7 +14,7 @@ Learning Rust Programming the old school way!
   - `cargo init` -> if project directory already exists
   - `Cargo.toml` -> config file
   - `Cargo.lock` -> created and maintained by `cargo`
-  - `cargo build` -> creates an executable file in `target/debug/`,  because the default build is a `debug` build
+  - `cargo build` -> creates an executable file in `target/debug/`, because the default build is a `debug` build
   - To run the program `./target/debug/<executable>`
   - Running `cargo buil`d for the first time causes `Cargo` to create a new file at the top level: `Cargo.lock`.
     - This file keeps track of the exact versions of dependencies in your project
@@ -24,18 +24,19 @@ Learning Rust Programming the old school way!
     - The top-level project directory is just for README files, license information, configuration files, and anything else not related to your code.
     - Using `cargo` helps you organize your projects. There’s a place for everything, and everything is in its place.
 - In Rust packages of code are referred to as `crates`
+- Installing packages: `cargo install <package name>`
 
 #### Terminologies and Conventions
 
 - `macro`: macro is like a function, but with an exclamation mark (!) after it. eg: `println!()` is a macro.
   - similar to functions (they execute things), but they do not always follow the same rules as functions.
-- `comments`: // single line,  /* */ multiline
+- `comments`: // single line, /* */ multiline
 
 #### Variables
 
 - use the `let` keyword and specify the name of the variable
-  -  eg: `let name = "Bob";`
-  -  println!("My first name is: {}", name);
+  - eg: `let name = "Bob";`
+  - println!("My first name is: {}", name);
   - uses `{}` as a placeholder in println!() to show variable values.
   - type of a variable is decided by the value you give it. Rust looks at the value and automatically chooses the right type.
   - You can also specify the type eg: `let my_num: i32 = 5;`
