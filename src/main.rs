@@ -16,12 +16,25 @@ fn variables() {
     println!("You have set integer number as {}", num);
     let floatnum = 10.5;
     println!("You have set decimal number as {}", floatnum);
+    let boolean = true;
+    println!("You have set boolean number as {}", boolean);
+
     // Examples: setting types explicitly
     let name_explicit: &str = "Alice";
     print!("Name is set as {} \n", name_explicit);
     let name_explicit2: &str;
     name_explicit2 = "Suse";
     print!("Name is set as {} \n", name_explicit2);
+
+    let my_num: i32 = 5; // integer
+    let my_float: f64 = 5.99; // float
+    let my_letter: char = 'D'; // character
+    let my_bool: bool = true; // boolean
+    let my_text: &str = "Hello"; // string
+    println!(
+        "Values set with explicit types: {} {} {} {} {}",
+        my_num, my_float, my_letter, my_bool, my_text
+    );
 }
 
 fn change_variables() {
