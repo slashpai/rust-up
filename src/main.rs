@@ -44,6 +44,59 @@ fn change_variables() {
     println!("After changing value: {}", x);
 }
 
+fn operators() {
+    let add = 5 + 3;
+    let sub = 10 - 4;
+    let mul = 6 * 2;
+    let div = 12 / 3;
+    let rem = 10 % 3;
+
+    println!("Add: {}", add);
+    println!("Sub: {}", sub);
+    println!("Mul: {}", mul);
+    println!("Div: {}", div);
+    println!("Rem: {}", rem);
+}
+
+fn conditionals() {
+    // if
+    let x = 10;
+    if x % 2 == 0 {
+        println!("{} is a even number", x);
+    }
+
+    // if else
+    let age = 16;
+    if age >= 18 {
+        println!("You are above 18, You can vote.");
+    } else {
+        println!("You are below 18, too young to vote.");
+    }
+
+    // if else if
+    let score = 85;
+
+    if score >= 90 {
+        println!("Your score is {}, Grade: A", score);
+    } else if score >= 80 {
+        println!("Your score is {}, Grade: B", score);
+    } else if score >= 70 {
+        println!("Your score is {}, Grade: C", score);
+    } else {
+        println!("Your score is {}, Grade: F", score);
+    }
+
+    // using if as an expression
+    // When using if as an expression, you must include else. This ensures the result always has a value.
+    let time = 20;
+    let greeting = if time < 12 {
+        "Good Morning."
+    } else {
+        "Good evening."
+    };
+    println!("{}", greeting);
+}
+
 fn main() {
     println!("Hello Rust!");
     println!("{}\nString Formatting Placeholders\n{}", DIVIDER, DIVIDER);
@@ -52,4 +105,8 @@ fn main() {
     variables();
     println!("{}\nChanging variables\n{}", DIVIDER, DIVIDER);
     change_variables();
+    println!("{}\nOperators\n{}", DIVIDER, DIVIDER);
+    operators();
+    println!("{}\nConditionals\n{}", DIVIDER, DIVIDER);
+    conditionals();
 }
